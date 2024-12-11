@@ -122,8 +122,7 @@ elif st.session_state["menu"] == "digitacion":
         valores_lista = list(valores_ingresados.values())
         
         try:
-            valores_lista = [float(i) for i in valores_lista]
-            print(valores_lista)
+            valores_lista = [float(str(i).replace(',', '.')) for i in valores_lista]
 
             xgb_model = cargar_modelo("sources/xgb_model.pkl")
             prediccion = predecir_inputs(xgb_model, valores_lista)
