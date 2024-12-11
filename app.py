@@ -13,7 +13,7 @@ if st.session_state["menu"] == "inicio":
 
     st.markdown(
         """<div style="background-color:#2C3E50;padding:10px;border-radius:10px;text-align:center;margin-bottom:20px;">
-            <h2 style="color:white;">¡holas!</h2>
+            <h2 style="color:white;">¡Aplicación para la Predicción de Diabetes!</h2>
             <h3 style="color:white;">Explora nuestras funcionalidades</h3></div>""",unsafe_allow_html=True)
 
     col1, _, col2 = st.columns([1.18, 0.01, 1.18])
